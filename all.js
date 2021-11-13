@@ -44,7 +44,7 @@ window.onload=function(){
 	//console.log(drowdownElements);
 	let myFunctionMore = function(e) {
 		//e.preventDefault();
-		//moreSearch(this.dataset.flag);// 連API要打開
+		moreSearch(this.dataset.flag);// 連API要打開
 		showSearchPanel();
 	};
 	for (let i = 0; i < btnMore.length; i++) {
@@ -78,7 +78,7 @@ window.onload=function(){
 		let keywordInputEl = document.querySelector('#keywordInput');
 		let keyword = keywordInputEl.value;
 		//alert(this.dataset.area);
-		//keywordSearch(this.dataset.area,keyword);    // 連API要打開
+		keywordSearch(this.dataset.area,keyword);    // 連API要打開
 		areaChooseElement.dataset.area = this.dataset.area;
 		console.log(this.dataset.area);
 		
@@ -472,10 +472,10 @@ window.onload=function(){
 	}
 	
 	//初始化首頁
-	//indexInit("hotspot");// 連API要打開
-	//indexInit("activity");// 連API要打開
-	//indexInit("restaurant");// 連API要打開
-	//indexInit("hotel");// 連API要打開
+	indexInit("hotspot");// 連API要打開
+	indexInit("activity");// 連API要打開
+	indexInit("restaurant");// 連API要打開
+	indexInit("hotel");// 連API要打開
 	
 }
 
